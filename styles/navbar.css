@@ -1,0 +1,117 @@
+/* Navigation Bar Styles */
+:root {
+    --primary-color: #2E7D32;  /* Forest Green */
+    --secondary-color: #81C784;  /* Light Green */
+    --text-color: #333333;
+    --hover-color: #4CAF50;  /* Medium Green */
+    --background-color: #FFFFFF;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: var(--background-color);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+nav a.active {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0.2rem 0;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+}
