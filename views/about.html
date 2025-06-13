@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Miyawaki Forest@IITPkd</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <!-- Font Awesome for hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <section>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../image.png" alt="Miyawaki Forest Logo" class="logo-img">
+                    <span class="brand-name">Miyawaki Forest</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="active">About</a>
+                    <a href="instructions.html">Instructions</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="treesinfo.html">Tree Data</a>
+                </div>
+                
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="instructions.html">Instructions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="treesinfo.html">Tree Data</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="about-section">
+            <h1>About Miyawaki Forest</h1>
+            <div class="about-content">
+                <h2>What is Miyawaki Forest?</h2>
+                <p>The Miyawaki method is a unique approach to creating dense, native forests. This technique, developed by Japanese botanist Akira Miyawaki, allows for the creation of forests in a short time span.</p>
+                
+                <h2>Our Mission</h2>
+                <p>At IIT Palakkad, we are committed to creating and maintaining a sustainable ecosystem through the Miyawaki method. The Miyawaki forest in out campus contains about 1200 trees of different species. Our goal is to contribute to environmental conservation while providing a living laboratory for research and education.</p>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Native species preservation</li>
+                    <li>Rapid forest development</li>
+                    <li>Biodiversity enhancement</li>
+                    <li>Carbon sequestration</li>
+                    <li>Educational value</li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen 
+                ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+            }
+        </script>
+    </section>
+</body>
+</html>
