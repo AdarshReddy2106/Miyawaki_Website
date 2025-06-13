@@ -1,0 +1,260 @@
+.hero-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0;
+}
+
+.iitpkd-logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.iitpkd-logo img {
+    width: 350px;
+    height: auto;
+}
+
+/* Design for mobile*/
+@media screen and (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+        min-height: 400px;
+    }
+
+    .hero-section img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .iitpkd-logo {
+        top: 45%;
+    }
+
+    .iitpkd-logo img {
+        width: 200px;
+    }
+
+    /* footer for tablets */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .footer-section p, 
+    .footer-section ul li {
+        font-size: 0.85rem;
+        margin: 8px 0;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+}
+
+/* for screens less than 480px width */
+@media screen and (max-width: 480px) {
+    .hero-section {
+        height: 80vh;
+        min-height: 450px;
+    }
+
+    .iitpkd-logo img {
+        width: 150px;
+    }
+
+    /* footer for mobile phones */
+    .footer {
+        padding: 30px 0 0 0;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+        padding: 0 20px;
+    }
+
+    .footer-section {
+        padding: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 20px;
+    }
+
+    .footer-section:last-child {
+        border-bottom: none;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+    .footer-section p, 
+    .footer-section ul li {
+        font-size: 0.9rem;
+        margin: 10px 0;
+        color: #e0e0e0;
+    }
+
+    .footer-section ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-section ul li {
+        padding: 5px 0;
+    }
+
+    .footer-section ul li a {
+        color: #e0e0e0;
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 25px;
+        margin-top: 10px;
+    }
+
+    .social-links a {
+        font-size: 1.4rem;
+        color: #e0e0e0;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+        padding: 15px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-bottom p {
+        font-size: 0.85rem;
+        color: #e0e0e0;
+        margin: 0;
+        padding: 0 20px;
+    }
+}
+
+/* for very small screens */
+@media screen and (max-width: 320px) {
+    .hero-section {
+        height: 85vh;
+        min-height: 400px;
+    }
+
+    .iitpkd-logo img {
+        width: 120px;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+    }
+
+    .footer-section p, 
+    .footer-section ul li {
+        font-size: 0.85rem;
+    }
+
+    .social-links a {
+        font-size: 1.3rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Styles for footer*/
+.footer {
+    background-color: #1a472a;
+    color: white;
+    padding: 40px 0 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-section p {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #ccc;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #2a5a3a;
+    margin-bottom: 0;
+}
+
+.footer-bottom p {
+    color: #ccc;
+    margin-bottom: 0;
+}

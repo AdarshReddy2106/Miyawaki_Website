@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miyawaki Forest@IITPkd</title>
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/index.css">
     <!-- Font Awesome for hamburger icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -15,7 +16,7 @@
         <nav>
             <div class="nav-container">
                 <div class="logo">
-                    <img src="../image.png" alt="Miyawaki Forest Logo" class="logo-img">
+                    <img src="../images/Miyawaki logo.png" alt="Miyawaki Forest Logo" class="logo-img">
                     <span class="brand-name">Miyawaki Forest</span>
                 </div>
                 <div class="nav-links">
@@ -34,32 +35,64 @@
             <div class="dropdown_menu">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="instructions.html">Instructions</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="treesinfo.html">Tree Data</a> </li>
+                    <li><a href="treesinfo.html">Tree Data</a></li>
                 </ul>
-
             </div>
-            <script>
-                const toggleBtn = document.querySelector('.toggle_btn')
-                const toggleBtnIcon = document.querySelector('.toggle_btn i')
-                const dropDownMenu = document.querySelector('.dropdown_menu')
-
-                toggleBtn.onclick = function () {
-                    dropDownMenu.classList.toggle('open')
-                    const isOpen = dropDownMenu.classList.contains('open')
-
-                    toggleBtnIcon.classList = isOpen 
-                    ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-                }
-            </script>     
         </nav>
 
-
         <div class="hero-section">
-            <img src="../image.png" alt="herosection">
+            <img src="../images/Miyawaki homepage.jpg" alt="Miyawaki Forest Hero Section">
+            <div class="iitpkd-logo">
+                <img src="../images/iitpkd logo.png" alt="IIT Palakkad Logo">
+            </div>
         </div>    
     </section> 
 
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>IIT Palakkad</p>
+                <p>Kerala, India</p>
+                <p>Email: miyawaki.iitpkd@gmail.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Miyawaki Forest IIT Palakkad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen 
+            ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        }
+    </script>
 </body>
 </html>
