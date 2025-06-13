@@ -85,43 +85,14 @@
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const dropDownMenu = document.querySelector('.dropdown_menu')
-        <div class="dropdown_menu">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="instructions.html">Instructions</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="treesinfo.html">Tree Data</a> </li>
-            </ul>
-
-        </div>
-        <script>
-            const toggleBtn = document.querySelector('.toggle_btn')
-            const toggleBtnIcon = document.querySelector('.toggle_btn i')
-            const dropDownMenu = document.querySelector('.dropdown_menu')
 
         toggleBtn.onclick = function () {
             dropDownMenu.classList.toggle('open')
             const isOpen = dropDownMenu.classList.contains('open')
-            toggleBtn.onclick = function () {
-                dropDownMenu.classList.toggle('open')
-                const isOpen = dropDownMenu.classList.contains('open')
 
             toggleBtnIcon.classList = isOpen 
             ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
         }
     </script>
-                toggleBtnIcon.classList = isOpen 
-                ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-            }
-        </script>     
-    </nav>
-
-
-    <div class="hero-section">
-        <img src="../image.png" alt="herosection">
-    </div>    
- 
-
 </body>
 </html>
