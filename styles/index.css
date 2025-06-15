@@ -258,12 +258,7 @@
     color: #ccc;
     margin-bottom: 0;
 }
-.download_btn {
-    border-radius: 6px;
-    background-color: aqua;
-    text-decoration-color: black;
-    height: 30px;
-}
+
 
 .about-section {
     background: linear-gradient(135deg, #f8faf5 60%, #e0f2e9 100%);
