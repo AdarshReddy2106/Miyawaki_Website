@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Instructions</title>
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/instructions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/images/iitpkd logo.png" alt="IIT Palakkad logo" class="logo-img">
+                <span class="brand-name">Miyawaki Forest</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">About <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="about_background.html" class="active">Background and History</a>
+                            <a href="#">Project Site for Classroom Teaching</a>
+                            <a href="#">Ongoing activities</a>
+                            <a href="#">Publications</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Instructions <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="instructions for class.html">For Ecology and Environment (ES1101) class project </a>
+                        <a href="#">Researchers</a>
+                        <a href="#">External Visitors</a>
+                    </div>
+                </div>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown-parent"><a href="#">About <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-submenu">
+                        <li><a href="about_background.html">Background and History</a></li>
+                        <li><a href="#">Project Site for Classroom Teaching</a></li>
+                        <li><a href="#">Ongoing activities</a></li>
+                        <li><a href="#">Publications</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-parent"><a href="#">Instructions <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-submenu">
+                        <li><a href="instructions for class.html">For Ecology and Environment (ES1101) class project </a></li>
+                        <li><a href="#">Researchers</a></li>
+                        <li><a href="#">External Visitors</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="treesinfo.html">Tree Data</a> </li>
+            </ul>
+        </div>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+                toggleBtnIcon.classList = isOpen 
+                ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+            }
+        </script>
+    </nav>
+    <section>
+        <div class="instructions">
+            <h1>Instructions For Students</h1>
+            <h2>Download the app below to record data for the Miyawaki Project.</h2>
+            <div class="tree-icon">
+                <img src="/images/tree-icon.png" alt="Tree Icon">
+                <h3 class="app-name">Ecolog</h3>
+            </div>
+            <div>
+                <a href="/assets/ecolog.apk" download="Ecolog.apk">
+                    <button class="download_btn">Download Apk</button>
+                </a>
+            </div>
+            <div class="steps">
+                <h2>Follow the steps below to successfully use the app: </h2>
+                <div class="step-container">
+                    <h3>
+                        <span class="step-number">1</span>
+                        <span>Sign Up 📝</span>
+                    </h3>
+                    <div class="step-content">
+                        <p>Sign up using your institute email ID. </p>
+                        <p>Create a password for your account. (The password should be at least 6 characters long!)</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <h3>
+                        <span class="step-number">2</span>
+                        <span>Login 🔓</span>
+                    </h3>
+                    <div class="step-content">
+                        <p>After signing up, you'll be redirected to the login page.</p>
+                        <p>Login again using your registered email ID and password.</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <h3>
+                        <span class="step-number">3</span>
+                        <span>Fill Student Details 🧑‍🎓</span>
+                    </h3>
+                    <div class="step-content">
+                        <p>Enter your name, roll number, and group name.(These are required to be entered only if you are signing up for the first time.)</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <h3>
+                        <span class="step-number">4</span>
+                        <span>Enter Tree Data 🌲</span>
+                    </h3>
+                    <div class="step-content">
+                        <p>Fill in the following tree details:</p>
+                        <p>Tree ID</p>
+                        <p>Number of primary stems (The number of primary stems should include the main stem and the other primary stems.)</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <h3>
+                        <span class="step-number">5</span>
+                        <span>Enter Branch Details 🌿</span>
+                    </h3>
+                    <div class="step-content">
+                        <p>According to the number of primary stems you entered, you'll be asked to enter the height(m) and circumference(cm) of each stem.</p>
+                        <p>The circumference of the stem should be measured at 13cm from its origin.</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <h3>
+                        <span class="step-number">6</span>
+                        <span>Upload Tree Image 📷</span>
+                    </h3>
+                    <div class="step-content">
+                        <p>Upload or take a photo of the tree.</p>
+                        <p>Ensure a person is holding the levelling staff beside the tree in the image.</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <h3>
+                        <span class="step-number">7</span>
+                        <span>Save Data 💾</span>
+                    </h3>
+                    <div class="step-content">
+                        <p>Click Save Data.</p>
+                        <p>You'll be redirected back to the tree data form to continue entering data for other trees.</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <h3>
+                        <span class="step-number">8</span>
+                        <span>Editing Data ✏️</span>
+                    </h3>
+                    <div class="step-content">
+                        <p>Students cannot edit submitted data.</p>
+                        <p>For any changes, please contact your instructor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 

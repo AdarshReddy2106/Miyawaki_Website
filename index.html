@@ -16,15 +16,29 @@
         <nav>
             <div class="nav-container">
                 <div class="logo">
-                    <img src="/images/Miyawaki logo.png" alt="Miyawaki Forest Logo" class="logo-img">
-                    <span class="brand-name">Miyawaki Forest</span>
+                    <img src="/images/iitpkd logo.png" alt="IIT Palakkad logo" class="logo-img">
+                    <span class="brand-name">Miyawaki Forest </span>
                 </div>
                 <div class="nav-links">
                     <a href="index.html" class="active">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="instructions.html">Instructions</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-toggle">About <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="about_background.html" class="active">Background and History</a>
+                            <a href="#">Project Site for Classroom Teaching</a>
+                            <a href="#">Ongoing activities</a>
+                            <a href="#">Publications</a>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <a href="#" class="dropdown-toggle">Instructions <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="instructions for class.html">For Ecology and Environment (ES1101) class project </a>
+                            <a href="#">Researchers</a>
+                            <a href="#">External Visitors</a>
+                        </div>
+                    </div>
                     <a href="gallery.html">Gallery</a>
-                    <a href="treesinfo.html">Tree Data</a>
                 </div>
                 
                 <div class="toggle_btn">
@@ -35,19 +49,28 @@
             <div class="dropdown_menu">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="instructions.html">Instructions</a></li>
+                    <li class="dropdown-parent"><a href="#">About <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-submenu">
+                            <li><a href="about_background.html">Background and History</a></li>
+                        <li><a href="#">Project Site for Classroom Teaching</a></li>
+                        <li><a href="#">Ongoing activities</a></li>
+                        <li><a href="#">Publications</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-parent"><a href="#">Instructions <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-submenu">
+                            <li><a href="instructions for class.html">For Ecology and Environment (ES1101) class project </a></li>
+                            <li><a href="#">Researchers</a></li>
+                            <li><a href="#">External Visitors</a></li>
+                        </ul>
+                    </li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="treesinfo.html">Tree Data</a></li>
                 </ul>
             </div>
         </nav>
 
         <div class="hero-section">
             <img src="/images/test.png" alt="Miyawaki Forest Hero Section">
-            <div class="iitpkd-logo">
-                <img src="/images/iitpkd logo.png" alt="IIT Palakkad Logo">
-            </div>
         </div>    
     </section> 
 
