@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/instructions.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #226d58 10%, #2d7a5f 50%, #4a9674 75%, #67b389 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -60,21 +69,11 @@
                     </ul>
                 </li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="treesinfo.html">Tree Data</a> </li>
             </ul>
         </div>
-        <script>
-            const toggleBtn = document.querySelector('.toggle_btn')
-            const toggleBtnIcon = document.querySelector('.toggle_btn i')
-            const dropDownMenu = document.querySelector('.dropdown_menu')
-            toggleBtn.onclick = function () {
-                dropDownMenu.classList.toggle('open')
-                const isOpen = dropDownMenu.classList.contains('open')
-                toggleBtnIcon.classList = isOpen 
-                ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-            }
-        </script>
+        <script src="Js/Dropdown.js"></script>
     </nav>
+    
     <section>
         <div class="instructions">
             <h1>Instructions For Students</h1>

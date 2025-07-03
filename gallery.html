@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="/styles/navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 
@@ -62,23 +63,11 @@
                     </ul>
                 </li>
                 <li><a href="gallery.html" class="active">Gallery</a></li>
-                <li><a href="treesinfo.html">Tree Data</a> </li>
             </ul>
         </div>
 
-        <script>
-            const toggleBtn = document.querySelector('.toggle_btn')
-            const toggleBtnIcon = document.querySelector('.toggle_btn i')
-            const dropDownMenu = document.querySelector('.dropdown_menu')
-
-            toggleBtn.onclick = function () {
-                dropDownMenu.classList.toggle('open')
-                const isOpen = dropDownMenu.classList.contains('open')
-
-                toggleBtnIcon.classList = isOpen 
-                ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-            }
-        </script>
+        <script src="Js/Dropdown.js"></script>
+        
     </nav>
 
     <section>
