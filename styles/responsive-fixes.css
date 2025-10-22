@@ -1,0 +1,58 @@
+/* Additional responsive fixes for all pages */
+
+/* General mobile improvements */
+@media (max-width: 768px) {
+    /* Prevent horizontal scrolling on mobile */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* Better section padding on mobile */
+    section {
+        padding: 0 0.8rem;
+    }
+    
+    /* Fix nav spacing */
+    nav {
+        padding: 0.5rem 1rem;
+    }
+    
+    /* Ensure images don't overflow */
+    img {
+        max-width: 100%;
+    }
+    
+    /* Better typography for small screens */
+    h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    .logo-img {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .brand-name {
+        font-size: 1.1rem;
+    }
+    
+    /* Adjust info sections for better mobile display */
+    .info-section, .about-section {
+        padding: 1rem !important;
+    }
+}
+
+/* Fix for dropdown menu z-index */
+.dropdown_menu.open {
+    z-index: 1000;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

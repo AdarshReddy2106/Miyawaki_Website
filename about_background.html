@@ -17,35 +17,78 @@
             align-items: flex-start;
             flex-wrap: wrap;
         }
+        
+        /* Consistent styling for all info sections */
+        .info-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .info-right {
+            flex-direction: row-reverse;
+        }
+        
+        .info-left {
+            flex-direction: row;
+        }
+        
         /* constrain image container so text and image balance */
-        .about-section .info-image {
-            flex: 0 0 360px; /* preferred image column width */
-            max-width: 360px;
+        .info-image {
+            flex: 0 0 300px; /* preferred image column width */
+            max-width: 300px;
             width: 100%;
         }
+        
         /* make image preserve aspect ratio and crop neatly */
-        .about-section .info-image img {
+        .info-image img {
             width: 100%;
-            height: 320px;        /* fixed visual height for consistency */
-            max-height: 420px;
+            height: auto;
+            max-height: 300px;
             object-fit: cover;    /* crop without distortion */
             border-radius: 10px;
             display: block;
             box-shadow: 0 8px 20px rgba(10,30,40,0.06);
         }
+        
         /* content column grows to fill remaining space */
-        .about-section .about-content {
+        .info-content, .about-content {
             flex: 1 1 400px;
             min-width: 220px;
         }
+        
+        /* Typography improvements */
+        h2 {
+            margin-top: 0;
+            color: #2E7D32;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
         /* keep paragraph formatting sensible on small screens */
         @media (max-width: 760px) {
-            .about-section .info-image {
-                flex: 1 1 100%;
+            .info-section {
+                flex-direction: column !important;
+                padding: 1rem;
             }
-            .about-section .info-image img {
-                height: auto;
-                max-height: none;
+            
+            .info-image {
+                flex: 1 1 100%;
+                max-width: 100%;
+                margin-bottom: 1rem;
+            }
+            
+            .info-content h2 {
+                margin-top: 0.5rem;
+            }
+            
+            section {
+                padding: 0 0.5rem;
             }
         }
     </style>
